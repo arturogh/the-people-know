@@ -1,2 +1,2 @@
 # the-people-know
-Theme for The People Know
+Tumblr theme for The People Know
