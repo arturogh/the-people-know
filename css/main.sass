@@ -1,0 +1,39 @@
+@import "bourbon/bourbon"
+@import "base/grid-settings"
+@import "neat/neat"
+@import "base/base"
+
+// Header
+
+header
+  position: fixed
+  bottom: 0
+  width: 100%
+  +display(flex)
+  +justify-content(space-between)
+  padding: 0 20px
+
+  nav ul
+    +display(flex)
+    +justify-content(flex-end)
+
+    li
+      padding-left: 10px
+
+// Cities
+
+main
+  section
+    +span-columns(6)
+    +omega()
+    height: 30%
+
+    a
+      +display(flex)
+      +justify-content(center)
+      +align-items(center)
+      height: 100%
+      width: 100%
+
+
+      h2
