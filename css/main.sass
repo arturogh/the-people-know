@@ -3,37 +3,55 @@
 @import "neat/neat"
 @import "base/base"
 
-// Header
+// Global Resets
 
-header
-  position: fixed
-  bottom: 0
-  width: 100%
-  +display(flex)
-  +justify-content(space-between)
-  padding: 0 20px
+body
+  margin: 0
+  padding: 0
 
-  nav ul
-    +display(flex)
-    +justify-content(flex-end)
 
-    li
-      padding-left: 10px
+*
+  box-sizing: border-box
 
-// Cities
+// Variables
 
-main
-  section
-    +span-columns(6)
-    +omega()
-    height: 30%
-
+.navigation
+  text-align: center
+  padding: 40px 0 20px
+  li
+    display: inline-block
+    padding: 0 2%
     a
-      +display(flex)
-      +justify-content(center)
-      +align-items(center)
-      height: 100%
+      font-size: 14px
+      color: #ccc
+      &:hover
+        color: $blue
+
+h1
+  text-align: center
+  padding: 0 0 60px
+  margin: 0
+  font-size: 36px
+  font-weight: 400
+
+.posts-container
+  +display(flex)
+  +justify-content(flex-start)
+  +flex-wrap(wrap)
+  max-width: 1200px
+  margin: 0 auto
+  .post
+    width: 33.333%
+    height: 160px
+    padding: 8px
+    border: 4px solid #fff
+    border-radius: 6px
+    @media screen and (max-width:1000px)
+      width: 50%
+    @media screen and (max-width:600px)
       width: 100%
-
-
-      h2
+    background: blue
+    h2 a
+      color: #fff
+      font-size: 24px
+      font-weight: 300
