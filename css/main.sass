@@ -12,6 +12,7 @@ body
 
 *
   box-sizing: border-box
+  font-family: 'Fira Sans', sans-serif
 
 // Variables
 
@@ -33,6 +34,7 @@ h1
   margin: 0
   font-size: 36px
   font-weight: 400
+  color: #384246
 
 .posts-container
   +display(flex)
@@ -41,17 +43,20 @@ h1
   max-width: 1200px
   margin: 0 auto
   .post
+    display: block
     width: 33.333%
     height: 160px
-    padding: 8px
+    padding: 16px
     border: 4px solid #fff
     border-radius: 6px
     @media screen and (max-width:1000px)
       width: 50%
     @media screen and (max-width:600px)
       width: 100%
-    background: blue
-    h2 a
+    background: #1A94FD
+    &:hover
+      background: #67D3FD
+    h2
       color: #fff
       font-size: 24px
       font-weight: 300
